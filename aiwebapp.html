@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Summer Free Time Idea Generator!</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to top right, #ed9898, #f8b500);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff3c00;
+      text-shadow: 1px 1px #fff;
+      margin-bottom: 15px;
+    }
+
+    #idea {
+      font-size: 1.3rem;
+      margin: 20px;
+      padding: 25px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 3px double #ff40af;
+      border-radius: 15px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      background-color: #ff3c00;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff40af;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Summer Fun Generator!</h1>
+  <div id="idea">Choose indoor or outdoor to get an activity suggestion!</div>
+
+  <div class="buttons">
+    <button onclick="generateIdea('indoor')">🏠 Indoor Activity</button>
+    <button onclick="generateIdea('outdoor')">🌳 Outdoor Activity</button>
+  </div>
+
+  <script>
+    const ideas = {
+      indoor: [
+        "Try a new summer recipe with fresh fruit! 🍓",
+        "Have a movie night with popsicles! 🎥",
+        "Do a summer-themed craft or painting! 🎨",
+        "Organize your space while blasting summer tunes! 🎶",
+        "Make your own iced tea or lemonade bar! 🍋",
+        "Do yoga or a workout in the A/C! 🧘",
+        "Read a beach-themed book! 📖",
+        "Make a scrapbook of past vacations! 📸"
+      ],
+      outdoor: [
+        "Have a picnic in the park! 🧺",
+        "Go on a nature walk or hike! 🚶‍♂️",
+        "Ride your bike around town! 🚴",
+        "Go stargazing or watch the sunset! 🌅",
+        "Try paddleboarding or kayaking! 🚣‍♀️",
+        "Start a mini herb or flower garden! 🌼",
+        "Play frisbee or volleyball with friends! 🥏",
+        "Take photos of summer scenery! 🌴"
+      ]
+    };
+
+    function generateIdea(type) {
+      const category = ideas[type];
+      const randomIndex = Math.floor(Math.random() * category.length);
+      document.getElementById('idea').textContent = category[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
+

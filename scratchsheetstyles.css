@@ -1,0 +1,97 @@
+body {
+    font-family: 'Lora', serif;
+    background: linear-gradient(to right, #FFB6C1, #FFEC8B);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #FF6347;
+    text-align: center;
+    padding: 40px;
+}
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    color: #FF6347;
+    letter-spacing: 1px;
+    text-align: center;
+}
+p {
+    font-family: 'Lora', serif;
+    font-size:large;
+    line-height: 1.6;
+    color: black;
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #FF6347;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FFB6C1;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: #FF6347;
+    padding: 50px;
+    margin: 20px;
+    border: 3px double #FF6347;
+}
+.onpageanchor {
+    text-align: center;
+    font-size: large;
+    text-decoration: underline;
+}
+.mainlineitems {
+    font-size: x-large;
+    font-weight: bold;
+    color: #FF6347;
+    padding: 50px;
+    list-style-position: inside;
+}
+.otherlineitems {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: normal;
+    color: black;
+}
+h2 {
+    color: black;
+    text-align: center;
+    padding: 50px;
+    margin: 20px;
+    border: 3px double black;
+}
+.header {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 5px double #FF6347;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+.webapp {
+    padding: 70px;
+    margin: 30px;
+    border: 3px double black;
+}
+.professionalpages {
+    padding: 10px;
+    margin: 50px;
+    border: 3px double black;
+}
+.fontxlarge {
+    font-size: x-large;
+}
